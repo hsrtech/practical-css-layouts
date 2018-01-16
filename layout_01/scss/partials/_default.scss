@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+// base CSS3 and HTMl5 components
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body { 
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+  }  
+
+a, a:visited, a:active, a:link {  
+	text-decoration:none;
+	font-weight: normal;
+    font-style: normal;
+	@include transitions();	
+	cursor:pointer;
+
+	&.bold { font-weight:bold; }
+	&:hover { text-decoration:underline; }
+	
+	&.white { 
+		color:white; 
+	} 
+}
+
+ul, li { 
+	list-style-type: disc;
+}
+
+p { 
+	margin:0px;
+	padding:0px;
+	margin-bottom:20px;
+	line-height: 1.5;
+}
+
+// media 
+
+img { max-width:100%; }
+video { max-width:100%; }
+object { max-width:100%; }
+
+
+// miscellaneous
+
+.center { text-align:center; margin:0px auto; }
+.left { text-align:left; }
+.right { text-align:right; }

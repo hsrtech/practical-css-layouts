@@ -1,0 +1,12 @@
+#wrapper {
+	display: grid;
+	grid-template-areas: 
+		"aside article";
+	grid-template-columns: 20% 1fr;
+}
+
+/* content section */
+#mainArticle { 
+    grid-area: article; 
+	background: #b4b7b8;
+}

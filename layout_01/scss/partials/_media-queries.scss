@@ -1,0 +1,10 @@
+/* Stack the layout on small devices/viewports. */
+
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "article"
+      "nav";
+    grid-template-columns: 1fr;
+ }
+}
