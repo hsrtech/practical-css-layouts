@@ -8,5 +8,19 @@
 /* content section */
 #mainArticle { 
     grid-area: article; 
-	background: #b4b7b8;
+	background: $bggrey;
+	
+	column-width: 20%;
+	column-count: 5;
+	column-gap: 25px;
+	padding: 2%;
+	
 }
+
+.box {
+	background-color: $white;
+	color: $textcolor;
+	font-size: 150%;
+	margin-bottom: 25px;
+	break-inside: avoid;
+  }
