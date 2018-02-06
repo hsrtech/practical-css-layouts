@@ -1,0 +1,94 @@
+.blog-content {
+	padding: 20px;
+	overflow: hidden;
+}
+
+.post-link {
+	background: $hover-blue;
+	color: $white;
+	padding: 20px;
+	text-align: center;
+	font-size: 18px;
+
+	a {
+		font-size: 14px;
+		font-style: italic;
+		font-weight: 700;
+		color: $white;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.post-aside {
+	background-color: $darkgrey;
+	color: $textcolor;
+	padding: 20px 20px 0 0;
+	border-left: 15px solid $hover-blue;
+
+	h2 {
+		color: $white;
+		padding-left: 20px;
+	}
+
+	p {
+		padding-left: 20px;
+	}
+}
+
+.post-quote {
+	background-color: $darkgrey;
+	color: $white;
+	padding: 20px;
+	margin: 0 0 25px 0;
+	text-align: center;
+
+	p {
+		font-style: italic;
+		font-size: 16px;
+		font-family: Georgia, Times, Times New Roman, serif;
+	}
+
+	cite {
+		font-style: normal;
+		color:  $hover-blue;
+		font-size: 18px;
+		position: relative;
+		padding-top: 25px;
+		display: block;
+
+		&:before {
+			position: absolute;
+			content: '';
+			background: url(../images/quotes.png) no-repeat;
+			width: 22px;
+			height: 17px;
+			top: 0px;
+			left: calc(50% - 11px);
+			
+		}
+	}
+}
+
+.post-btn {
+	background-color: $hover-blue;
+	color: $white;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 100;
+	display: inline-block;
+	padding: 25px;
+	position: absolute;
+	bottom: 0px;
+	left: calc(50% - 92px);
+	margin-top: 50px;
+	height: 63px;
+	box-sizing: border-box;
+
+	&:hover {
+		text-decoration: none;
+	}
+}

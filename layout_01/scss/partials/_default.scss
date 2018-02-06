@@ -22,11 +22,12 @@ body {
 
 a, a:visited, a:active, a:link {  
 	text-decoration:none;
-	font-weight: normal;
-    font-style: normal;
-	@include transitions();	
-	cursor:pointer;
-
+	line-height: 1.5;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+	cursor: pointer;
+	
 	&.bold { font-weight:bold; }
 	&:hover { text-decoration:underline; }
 	
@@ -54,6 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
 	color: $black;
 	margin-bottom: 15px;
+	margin-top: 0;
 }
 
 h2 {
