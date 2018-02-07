@@ -1,10 +1,9 @@
 /* Stack the layout on small devices/viewports. */
 
-@media all and (max-width: 575px) {
-  body { 
+@media all and (max-width: 736px) {
+  #wrapper { 
     grid-template-areas: 
-      "article"
-      "nav";
+      "aside" "article";
     grid-template-columns: 1fr;
  }
 }

@@ -73,6 +73,12 @@
 	}
 }
 
+.btn-outer {
+	margin-top: 50px;
+	display: block;
+    height: 63px;
+}
+
 .post-btn {
 	background-color: $hover-blue;
 	color: $white;
@@ -84,7 +90,6 @@
 	position: absolute;
 	bottom: 0px;
 	left: calc(50% - 92px);
-	margin-top: 50px;
 	height: 63px;
 	box-sizing: border-box;
 
