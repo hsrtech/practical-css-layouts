@@ -1,7 +1,7 @@
 /* Stack the layout on small devices/viewports. */
 
 @media all and (max-width: 736px) {
-  #wrapper { 
+  #wrapper, .home-sec { 
     grid-template-areas: 
       "aside" "article";
     grid-template-columns: 1fr;
