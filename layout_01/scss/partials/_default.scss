@@ -93,3 +93,28 @@ object { max-width:100%; }
 .bdr-left {
 	border-left: 1px solid $lightergrey;
 }
+
+/* Progress Bar */
+
+progress {
+	display: block; /* default: inline-block */
+	width: 100%;
+	padding: 0;
+	border: 1px solid $lightergrey;
+	background: $white;
+	height: 32px;
+	box-sizing: border-box;
+	color: $lightergrey;
+  
+	&::-moz-progress-bar {
+		background: $lightergrey;
+    }
+
+    &::-webkit-progress-bar {
+    	background: transparent;
+	} 
+
+	&::-webkit-progress-value {  
+		background: $lightergrey;
+	}
+}
