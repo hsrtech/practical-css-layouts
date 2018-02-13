@@ -16,7 +16,7 @@ body {
     background: #e1ddda;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5em;
     color: #626d71;
     margin: 0;
@@ -44,13 +44,23 @@ h2 {
     font-size: 26px;
 }
 
-aside {
+section {
     background-color: #fff;
-    padding: 2.5em;
     text-align: left;
-    width: 25%;
+    width: 30%;
     float: left;
     box-sizing: border-box;
+}
+
+.logo {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5em 0.5em 0.5em 1.5em;
+    margin: 0;
+}
+
+.section-inner {
+    padding: 1em 2.5em 2.5em;
 }
 
 .faq {
@@ -65,15 +75,15 @@ aside {
 .faq strong {
     font-family: 'Alegreya', serif;
     font-weight: 700;
-    color: #f98866;
+    color: #000;
     margin-bottom: 2px;
     display: block;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 article {
-    width: 75%;
-    padding: 4em 2.5em 2.5em 2.5em;
+    width: 70%;
+    padding: 2.5em;
     float: left;
     box-sizing: border-box;
 }
@@ -106,3 +116,19 @@ article {
     font-size: 19px;
     margin: 0;
 }
+
+.social-share {
+    list-style: none;
+    padding: 0;
+}
+
+.social-share li {
+    float: left;
+    margin-right: 10px;
+}
+
+.social-share .fb_iframe_widget span {
+    vertical-align: top !important;
+}
+
+/* Media Queries */

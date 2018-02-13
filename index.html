@@ -4,42 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <title>Practical Layouts with CSS Grid</title>
+    <title>Practical CSS Layout</title>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     
   </head>
   <body>
     <div id="wrapper">
-      <aside>
-        <h1>Practical Layouts with CSS Grid</h1>
-        <p><em>The best way to learn something new is to practice.</em> When I started learning CSS Grid, I found that most of the articles/tutorials provide a very basic layout to make it easy to explain things. But those easy layouts do not cover real word challenges that we face while working on actual projects. So I decided to design some real pages to find out the real challenges while working with new CSS layout modules.</p>
-        <p>I am creating these pages using CSS Grid layout Module, Flexible Box Layout Module (Flexbox), and other new features in CSS. Also, I have shared my code in this <a href="https://github.com/hsrtech/practical-layouts-with-grid" target="_blank">github repository</a> so that anybody can use the code for learning.</p>
+      <section>
+        <h1 class="logo">Practical CSS Layouts</h1>
+        <div class="section-inner">
+          <p><em>The best way to learn something new is to practice.</em> When I started learning CSS Grid, I found that most of the articles/tutorials provide a very basic layout to make it easy to explain things. But those easy layouts do not cover real word challenges that we face while working on actual projects. So I decided to design some real pages to find out the real challenges while working with new CSS layout modules.</p>
+          <p>I am creating these pages using CSS Grid layout Module, Flexible Box Layout Module (Flexbox), and other new features in CSS. Also, I have shared my code in this <a href="https://github.com/hsrtech/practical-layouts-with-grid" target="_blank">github repository</a> so that anybody can use the code for learning.</p>
 
-        <h2>FAQ</h2>
-        <ul class="faq">
-          <li><strong>Can I use these designs?</strong>
-            I have used some open source designs available at different websites; due credit is given to each designer. Please get in touch with the respective designers if you need more details about licensing information for a design. 
-          </li>
-          <li><strong>Can I use this code?</strong>
-            This is an open source project, you can use the code as you like. However because code in this project is experimental, I cannot guarantee its compatibility with all browsers and devices.
-          </li>
-          <li><strong>Can I contribute?</strong>
-            Yes, any contributions are welcome, if they are relevant to this project.</li>
-          <li><strong>Can I provide you a design for coding?</strong>
-            Yes, but all pages/designs will be available as part of this open source project. Alternatively I am available on upwork for paid projects.</li>  
-          <li><strong>How can I learn CSS Grid Module?</strong>
-            I am curating a list of learning resources (Link to be added)</li>
-        </ul>
+          <h2>FAQ</h2>
+          <ul class="faq">
+            <li><strong>Can I use these designs?</strong>
+              I have used some open source designs available at different websites; due credit is given to each designer. Please get in touch with the respective designers if you need more details about licensing information for a design. 
+            </li>
+            <li><strong>Can I use this code?</strong>
+              This is an open source project, you can use the code as you like. However because code in this project is experimental, I cannot guarantee its compatibility with all browsers and devices.
+            </li>
+            <li><strong>Can I contribute?</strong>
+              Yes, any contributions are welcome, if they are relevant to this project.</li>
+            <li><strong>Can I provide you a design for coding?</strong>
+              Yes, but all pages/designs will be available as part of this open source project. Alternatively I am available on upwork for paid projects.</li>  
+            <li><strong>How can I learn CSS Grid Module?</strong>
+              I am curating a list of learning resources (Link to be added)</li>
+          </ul>
 
-        <h2>About Me</h2>
-        <p>Hi, I am Jaspreet K. Jain, I am a Frontend developer, entrepreneur, co-founder  <a href="http://hsrtech.com/" target="_blank">@ HSR Technologies</a>, and mother of a lovely son.</p>
-        <p>Follow me on twitter <a href="https://twitter.com/JaspreetJain" target="_blank">@jaspreetkjain</a></p>
+          <h2>About Me</h2>
+          <p>Hi, I am Jaspreet K. Jain, I am a Frontend developer, entrepreneur, co-founder  <a href="http://hsrtech.com/" target="_blank">@ HSR Technologies</a>, and mother of a lovely son.</p>
+          <p>Follow me on twitter <a href="https://twitter.com/JaspreetJain" target="_blank">@jaspreetkjain</a></p>
 
-        <h2>Spread the word</h2>
-        <p>Share my love for this project so that others can know and then use this code.</p>
-      </aside>
+          <h2>Spread the word</h2>
+          <p>Share my love for this project so that others can know and then use this code.</p>
+          <ul class="social-share">
+            <li>
+              <!-- Place this tag where you want the share button to render. -->
+            <div class="g-plus" data-action="share" data-href="http://jaspreetkaur.com/practicalcsslayouts/"></div>
+            </li>
+            <li>
+                <div class="fb-share-button" data-href="http://jaspreetkaur.com/practicalcsslayouts/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fjaspreetkaur.com%2Fpracticalcsslayouts%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+            </li>
+            <li></li>
+          </ul>
+        </div>  
+        
+      </section>
       
       <article>
         <div class="box">
