@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+
+header {
+    background-color: #323232;
+    color: #fff;
+    font-size: 10px;
+    padding: 32px 0 23px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 90px;
+}
+
+header::before {
+    position: absolute;
+    content: '';
+    bottom: -27px;
+    left: calc(50% - 45px);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 27px 45px 0 45px;
+    border-color: #323232 transparent transparent transparent;
+}
+
+.logo {
+    position: absolute;
+    top: 12px;
+    left: calc(50% - 32px);
+}
+
+.primary-nav {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.primary-nav li {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    margin: 0px 12px;
+}
+
+.primary-nav li:nth-child(2) {
+    margin-right: 70px;
+}
+
+.primary-nav li:nth-child(3) {
+    margin-left: 70px;
+}
+
+.primary-nav a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: navajowhite;
+}
+
+footer {
+    background-color: #222222;
+    color: #fff;
+    font-size: 12px;
+    padding: 15px 0;
+}
+
+footer p {
+    margin: 0;
+    padding: 0 15px;
+}
+
+#profile {
+    background-color: #2eb398;
+    color: #fff;
+    padding: 67px;
+}
+
