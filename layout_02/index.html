@@ -12,6 +12,10 @@
     
   </head>
   <body>
+    <div class="preview_header">
+      <h1><a href="http://jaspreetkaur.com/practicalcsslayouts/" target="_blank">Practical CSS Layouts</a></h1>
+      <div class="link"><a href="https://github.com/hsrtech/practical-css-layouts/tree/master/layout_02" target="_blank">Source Code on GitHub</a></div>
+    </div>
     <header>
       <div class="container clearfix">
         <a href="#"><img src="images/logo.png" alt="" class="logo"></a>
@@ -26,7 +30,45 @@
 
     <section id="profile">
       <div class="container">
-        <div><img src="images/profile-img.jpg" alt=""></div>
+        <div class="profile-img">
+          <div><img src="images/profile-img.jpg" alt=""></div>
+        </div>
+        <div class="profile-content">
+          <h2>Smith Anderson</h2>
+          <h3>Illustrator &amp; Character Designer</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna</p>
+          <ul class="social-icons">
+            <li><a href="#"><img src="images/icon-facebook.jpg" alt="Facebook"></a></li>
+            <li><a href="#"><img src="images/icon-twitter.jpg" alt="Twitter"></a></li>
+            <li><a href="#"><img src="images/icon-google-plus.jpg" alt="Google Plus"></a></li>
+            <li><a href="#"><img src="images/icon-pinterest.jpg" alt="Pinterest"></a></li>
+            <li><a href="#"><img src="images/icon-linkedin.jpg" alt="Linkedin"></a></li>
+            <li><a href="#"><img src="images/icon-dribble.jpg" alt="Dribble"></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="get-touch">
+      <div class="container">
+          <div class="contact-form">
+            <h2>Get In Touch</h2>
+            <h3>In order to get in touch use the contact form below:</h3>
+            <form action="">
+              <input type="text" id="full-name" name="full-name" placeholder="Name (Required)" required>
+              <input type="email" id="email" name="email" placeholder="Email (Required)" required>
+              <input type="text" id="subject" name="phone" placeholder="Subject">
+              <textarea id="message" placeholder="Write your message here..."></textarea>
+              <input type="submit" value="Send" class="btn">
+            </form>
+          </div>
+    
+            <div class="contact-info">
+              <p><strong>Quisque Hendrerit:</strong> purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae.</p>
+              <address>Elm St. 14/05 Lost City</address>
+              <span class="phone">+ 3528 331 86 35</span>
+              <a href="mailto:info&#64;hexalcorp.com" class="email">info&#64;hexalcorp.com</a>
+            </div>
       </div>
     </section>
     <footer>

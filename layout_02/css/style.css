@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900');
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
+/* General Styling */
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
 }
 
 .container {
@@ -26,6 +29,70 @@ body {
   zoom: 1; /* ie 6/7 */
 }
 
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin:0;
+    padding: 0;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+/* Preview Header */
+.preview_header {
+    font-size: 12px;
+    height: 54px;
+    background-color: #262626;
+    z-index: 100;
+    line-height: 54px;
+	padding: 0px 20px;
+	border-bottom: 1px solid #000;
+	overflow: hidden;
+}
+
+.preview_header h1 {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.preview_header h1 a {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.preview_header .link {
+    float: right;
+}
+
+.preview_header .link a {
+    font-size: 15px;
+}
+
+.preview_header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Header */
 header {
     background-color: #323232;
     color: #fff;
@@ -40,7 +107,7 @@ header {
 header::before {
     position: absolute;
     content: '';
-    bottom: -27px;
+    bottom: -26px;
     left: calc(50% - 45px);
     width: 0;
     height: 0;
@@ -79,9 +146,10 @@ header::before {
 .primary-nav a {
     color: #fff;
     text-transform: uppercase;
-    text-decoration: navajowhite;
+    text-decoration: none;
 }
 
+/* Footer */
 footer {
     background-color: #222222;
     color: #fff;
@@ -94,9 +162,205 @@ footer p {
     padding: 0 15px;
 }
 
+/* Profile Section */
 #profile {
     background-color: #2eb398;
     color: #fff;
-    padding: 67px;
+    padding: 20px;
+    overflow: hidden;
+    color: #d7fcf5;
 }
 
+#profile h3 {
+    color: #20816d;
+}
+
+#profile .container {
+    border-right: 1px solid #219d84;
+    border-left: 1px solid #219d84;
+    padding: 47px 20px;
+    overflow: hidden;
+    width: 780px;
+}
+
+.profile-img {
+    position:relative;
+  list-style-type:none;
+  width:180px; 
+  padding-bottom: 210px;
+  float:left;
+  overflow:hidden;
+  visibility:hidden;
+ 
+  -webkit-transform: rotate(-60deg) skewY(30deg);
+  -ms-transform: rotate(-60deg) skewY(30deg);
+  transform: rotate(-60deg) skewY(30deg);
+
+}
+
+.profile-img *{
+    position:absolute;
+    visibility:visible;
+  }
+
+.profile-img > div{
+    width:100%;
+    height:100%;
+    text-align:center;
+    color:#fff;
+    overflow:hidden;
+    
+    -webkit-transform: skewY(-30deg) rotate(60deg);
+    -ms-transform: skewY(-30deg) rotate(60deg);
+    transform: skewY(-30deg) rotate(60deg);
+    
+      -webkit-backface-visibility:hidden;
+    
+  }
+  
+  /* HEX CONTENT */
+.profile-img img{
+    left:-100%; 
+    right:-100%;
+    width: auto; 
+    height:100%;
+    margin:0 auto;   
+}
+
+.profile-content {
+    width: 580px;
+    float: right;
+}
+
+.social-icons {
+    overflow: hidden;
+    float: right;
+    margin-top: 30px;
+}
+
+.social-icons li {
+    list-style: none;
+    float: left;
+}
+
+/* Get In Touch */
+#get-touch {
+    background-color: #323232;
+    color: #bebebe;
+    overflow: hidden;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+#get-touch:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    border-top: 1px solid #2b2b2b;
+    top: 20px;
+    left: 2%;
+    width: 96%;
+}
+
+#get-touch:after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    border-top: 1px solid #2b2b2b;
+    bottom: 20px;
+    left: 2%;
+    width: 96%;
+}
+
+#get-touch .container {
+    padding: 47px 20px;
+    overflow: hidden;
+    width: 780px;
+}
+
+.contact-form {
+    float: left;
+    width: 77%;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #bebebe;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #bebebe;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #bebebe;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #bebebe;
+  }
+
+input[type="text"],
+input[type="email"],
+textarea  {
+    background-color: #454545;
+    border: 0;
+    width: 100%;
+    color: #bebebe;
+    height: 38px;
+    line-height: 38px;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 16px;
+    outline: none;
+}
+
+textarea {
+    height: 200px;
+    line-height: 16px;
+    padding: 15px;
+}
+
+.btn {
+    background-color: #2eb398;
+    border: 0;
+    color: #d7fcf5;
+    height: 38px;
+    line-height: 38px;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    float: right;
+}
+
+.contact-info {
+    float: right;
+    width: 20%;
+    margin-top: 70px;
+}
+
+.contact-info address {
+    font-style: normal;
+    margin-bottom: 5px;
+    background: url(../images/icon-location.png) no-repeat 0 0;
+    padding-left: 25px;
+}
+
+.phone {
+    margin-bottom: 5px;
+    display: block;
+    background: url(../images/icon-phone.png) no-repeat 0 0;
+    padding-left: 25px;
+}
+
+.email {
+    margin-bottom: 5px;
+    color: #bebebe;
+    text-decoration: none;
+    display: block;
+    background: url(../images/icon-mail.png) no-repeat 0 4px;
+    padding-left: 25px;
+}

@@ -131,4 +131,13 @@ article {
     vertical-align: top !important;
 }
 
+.btn {
+    padding: 15px 25px;
+    background-color: #f98866;
+    color: #fff;
+    font-family: 'Alegreya', serif;
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+
 /* Media Queries */
