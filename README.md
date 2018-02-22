@@ -10,6 +10,8 @@ I am creating these pages using CSS Grid layout Module, Flexible Box Layout Modu
 
 Layout 1 - [Page 1](http://jaspreetkaur.com/practicalcsslayouts/layout_01/index.html) | [Page 2](http://jaspreetkaur.com/practicalcsslayouts/layout_01/blog.html)
 
+Layout 2 - [Page 1](http://jaspreetkaur.com/practicalcsslayouts/layout_02/index.html) 
+
 
 ## FAQs
 
