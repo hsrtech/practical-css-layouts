@@ -45,7 +45,7 @@ h2 {
 }
 
 .fork-github {
-    position: absolute; 
+    position: fixed; 
     top: 0; 
     right: 0; 
     border: 0;

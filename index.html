@@ -4,13 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
+    <meta charset="utf-8">
     <title>Practical CSS Layouts</title>
+    <meta name="description" content="Real webpages with real-world challenges, created using CSS Grid Layout Module, Flexible Box Layout Module (Flexbox), and other new features in CSS.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Jaspreet Kaur Jain">
 
     <link rel="icon" type="image/x-icon" href="favicon.png">
 
     <!-- External CSS -->
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@jaspreetkjain">
+    <meta name="twitter:title" content="Practical CSS Layouts">
+    <meta name="twitter:description" content="Real webpages with real-world challenges, created using CSS Grid Layout Module, Flexible Box Layout Module (Flexbox), and other new features in CSS.">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Practical CSS Layouts">
+    <meta property="og:site_name" content="Practical CSS Layouts">
+    <meta property="og:url" content="http://jaspreetkaur.com/practicalcsslayouts/">
+    <meta property="og:image" content="--">
+    <meta property="article:published_time" content="2018-01-10">
+    <meta property="article:author" content="https://www.facebook.com/jas.jain">
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -23,7 +40,23 @@
       js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-    
+
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+
+      return t;
+    }(document, "script", "twitter-wjs"));</script>
   </head>
   <body>
     <div id="wrapper">
@@ -60,7 +93,7 @@
             <input id="tab-four" type="checkbox" name="tabs">
             <label for="tab-four">Can I provide you a design for coding?</label>
             <div class="tab-content">
-              <p>Yes, but all pages/designs will be available as part of this open source project. Alternatively I am available on <a href="https://www.upwork.com/freelancers/~0136ee5eecf8489bd0" target="_blank">upwork</a> for paid projects.</p>
+              <p>Yes, but all pages/designs will be available as part of this open source project. Alternatively I am available on <a href="https://www.upwork.com/fl/jaspreetkjain" target="_blank">upwork</a> for paid projects.</p>
             </div>
           </div>
           <div class="tab">
@@ -86,7 +119,9 @@
             <li>
                 <div class="fb-share-button" data-href="http://jaspreetkaur.com/practicalcsslayouts/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fjaspreetkaur.com%2Fpracticalcsslayouts%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
             </li>
-            <li></li>
+            <li>
+              <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Practical%20CSS%20Layouts%20by%20@jaspreetkjain">Tweet</a>
+            </li>
           </ul>
         </div>  
         
