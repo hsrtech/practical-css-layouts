@@ -6,6 +6,8 @@
 
     <title>Practical CSS Layouts</title>
 
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
     <!-- External CSS -->
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/style.css">
@@ -25,6 +27,7 @@
   </head>
   <body>
     <div id="wrapper">
+        <a href="https://github.com/hsrtech/practical-layouts-with-grid" target="_blank"><img class="fork-github" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
       <section>
         <h1 class="logo">Practical CSS Layouts</h1>
         <div class="section-inner">
@@ -32,20 +35,42 @@
           <p>I am creating these pages using CSS Grid layout Module, Flexible Box Layout Module (Flexbox), and other new features in CSS. Also, I have shared my code in this <a href="https://github.com/hsrtech/practical-layouts-with-grid" target="_blank">github repository</a> so that anybody can use the code for learning.</p>
 
           <h2>FAQ</h2>
-          <ul class="faq">
-            <li><strong>Can I use these designs?</strong>
-              I have used some open source designs available at different websites; due credit is given to each designer. Please get in touch with the respective designers if you need more details about licensing information for a design. 
-            </li>
-            <li><strong>Can I use this code?</strong>
-              This is an open source project, you can use the code as you like. However because code in this project is experimental, I cannot guarantee its compatibility with all browsers and devices.
-            </li>
-            <li><strong>Can I contribute?</strong>
-              Yes, any contributions are welcome, if they are relevant to this project.</li>
-            <li><strong>Can I provide you a design for coding?</strong>
-              Yes, but all pages/designs will be available as part of this open source project. Alternatively I am available on <a href="https://www.upwork.com/freelancers/~0136ee5eecf8489bd0" target="_blank">upwork</a> for paid projects.</li>  
-            <li><strong>How can I learn CSS Grid Module?</strong>
-              I am curating a list of learning resources (Link to be added)</li>
-          </ul>
+          <div class="tab">
+            <input id="tab-one" type="checkbox" name="tabs">
+            <label for="tab-one">Can I use these designs?</label>
+            <div class="tab-content">
+              <p> I have used some open source designs available at different websites; due credit is given to each designer. Please get in touch with the respective designers if you need more details about licensing information for a design.</p>
+            </div>
+          </div>
+          <div class="tab">
+            <input id="tab-two" type="checkbox" name="tabs">
+            <label for="tab-two">Can I use this code?</label>
+            <div class="tab-content">
+              <p> This is an open source project, you can use the code as you like. However because code in this project is experimental, I cannot guarantee its compatibility with all browsers and devices.</p>
+            </div>
+          </div>
+          <div class="tab">
+            <input id="tab-three" type="checkbox" name="tabs">
+            <label for="tab-three">Can I contribute?</label>
+            <div class="tab-content">
+              <p>Yes, any contributions are welcome, if they are relevant to this project.</p>
+            </div>
+          </div>
+          <div class="tab">
+            <input id="tab-four" type="checkbox" name="tabs">
+            <label for="tab-four">Can I provide you a design for coding?</label>
+            <div class="tab-content">
+              <p>Yes, but all pages/designs will be available as part of this open source project. Alternatively I am available on <a href="https://www.upwork.com/freelancers/~0136ee5eecf8489bd0" target="_blank">upwork</a> for paid projects.</p>
+            </div>
+          </div>
+          <div class="tab">
+            <input id="tab-five" type="checkbox" name="tabs">
+            <label for="tab-five">How can I learn CSS Grid Module?</label>
+            <div class="tab-content">
+              <p>I am curating a list of learning resources (Link to be added)</p>
+            </div>
+          </div>
+
 
           <h2>About Me</h2>
           <p>Hi, I am Jaspreet K. Jain, I am a Frontend developer, entrepreneur, co-founder @ <a href="http://hsrtech.com/" target="_blank">HSR Technologies</a>, and mother of a lovely son.</p>
@@ -91,12 +116,19 @@
                 <a href="https://github.com/hsrtech/practical-css-layouts/tree/master/layout_02" target="_blank" class="btn">Source Code <i class="fa-fw select-all fab"></i></a>  
                 <a href="http://jaspreetkaur.com/practicalcsslayouts/layout_02/index.html" target="_blank" class="btn">Preview Page</a></p>
             </header>
-            
           </div>
-
-        
-
       </article>
     </div>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114592325-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-114592325-1');
+    </script>
+
   </body>
 </html>
